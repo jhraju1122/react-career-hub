@@ -12,6 +12,7 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+ 
 
 
 // 2// Router setup 
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>
+   errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: '/applied',
         element:<AppliedJobs></AppliedJobs>
-      },
+      }
     ]
   },
 ]);
