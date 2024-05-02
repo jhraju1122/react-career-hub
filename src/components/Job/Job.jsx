@@ -1,7 +1,7 @@
 import { CiLocationOn } from "react-icons/ci";
-
+import { Link } from "react-router-dom";
 const Job = ({job}) => {
-    const {logo} = job;
+    const { id,logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
       
         <div class="card card-compact w-96 bg-base-100 shadow-xl">
@@ -12,9 +12,12 @@ const Job = ({job}) => {
     <div class="card-actions justify-end">
       <div>
         <h2><CiLocationOn></CiLocationOn></h2>
-      </div>
-      <button class="btn btn-primary">View Details</button>
+         
+      </div> 
     </div>
+    <Link to={`/job/${id}`}>
+        <button class="btn btn-primary">View Details</button>
+        </Link>
   </div>
 </div>
     );
