@@ -13,7 +13,7 @@ const Job = ({job}) => {
       <div>
         <h2><CiLocationOn></CiLocationOn></h2>
       </div>
-      <button class="btn btn-primary">Buy Now</button>
+      <button class="btn btn-primary">View Details</button>
     </div>
   </div>
 </div>
